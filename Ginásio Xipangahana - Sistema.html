@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/Yuran/Videos/YURAN%20PRIMEIRO/index.html -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Ginásio Xipangahana - Sistema</title>
+<link href="./Ginásio Xipangahana - Sistema_files/css2" rel="stylesheet">
+<script src="./Ginásio Xipangahana - Sistema_files/chart.js.download"></script>
+<style>
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+header {
+    text-align:center;
+    padding:30px;
+    font-size:32px;
+    font-weight:bold;
+    text-shadow:2px 2px #000;
+}
+.container{
+    width:95%;
+    max-width:1200px;
+    margin:20px auto;
+}
+h2{
+    text-align:center;
+    text-decoration:underline;
+    margin-top:30px;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+th,td{
+    padding:10px;
+    border:1px solid #fff;
+    text-align:center;
+}
+th{
+    background:rgba(0,0,0,0.6);
+}
+tr:nth-child(even){
+    background: rgba(255,255,255,0.1);
+}
+tr.devedor{
+    background: rgba(255,0,0,0.3);
+}
+form{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    background: rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+    margin-top:20px;
+}
+form input, form select{
+    margin:5px;
+    padding:8px;
+    width:200px;
+    border:none;
+    border-radius:5px;
+}
+form button{
+    padding:10px 20px;
+    margin-top:10px;
+    background:#38bdf8;
+    border:none;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+.status{
+    font-weight:bold;
+}
+.status.pago{ color:#0f0; }
+.status.devedor{ color:#f00; }
+.dashboard{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin-top:30px;
+}
+.dashboard div{
+    background: rgba(0,0,0,0.5);
+    padding:20px;
+    border-radius:10px;
+    width:22%;
+    text-align:center;
+    margin-bottom:10px;
+}
+canvas{
+    background:#fff;
+    border-radius:10px;
+}
+</style>
+</head>
+<body>
+
+<header>GINÁSIO XIPANGAHANA</header>
+
+<div class="container">
+
+<h2>Alunos</h2>
+<table id="tabelaAlunos">
+<thead>
+<tr>
+<th>Nome</th><th>Idade</th><th>Inscrição</th><th>Pacote</th><th>Valor</th><th>Pagamento</th><th>Validade</th><th>Comprovativo</th>
+</tr>
+</thead>
+<tbody><tr class="">
+<td>undefined</td><td>21</td><td>2026-03-17</td>
+<td>Maior de Idade</td><td>1300</td>
+<td class="status pago">pago</td>
+<td>2026-04-17</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Maior%20de%20Idade%20de%201300MZN" target="_blank">Enviar</a></td>
+</tr><tr class="devedor">
+<td>undefined</td><td>20</td><td>2026-02-14</td>
+<td>Menor de Idade</td><td>1000</td>
+<td class="status devedor">devedor</td>
+<td>-</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Menor%20de%20Idade%20de%201000MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>12</td><td>2026-03-20</td>
+<td>Menor de Idade</td><td>1000</td>
+<td class="status pago">pago</td>
+<td>2026-04-20</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Menor%20de%20Idade%20de%201000MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>21</td><td>2026-03-20</td>
+<td>Maior de Idade</td><td>1300</td>
+<td class="status pago">pago</td>
+<td>2026-04-20</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Maior%20de%20Idade%20de%201300MZN" target="_blank">Enviar</a></td>
+</tr><tr class="devedor">
+<td>undefined</td><td>27</td><td>2026-01-20</td>
+<td>Maior de Idade</td><td>1300</td>
+<td class="status devedor">devedor</td>
+<td>-</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Maior%20de%20Idade%20de%201300MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>16</td><td>2026-03-20</td>
+<td>Menor de Idade</td><td>1000</td>
+<td class="status pago">pago</td>
+<td>2026-04-20</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Menor%20de%20Idade%20de%201000MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>26</td><td>2026-03-20</td>
+<td>Casal</td><td>2100</td>
+<td class="status pago">pago</td>
+<td>2026-04-20</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Casal%20de%202100MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>0</td><td>2026-03-20</td>
+<td>Casal</td><td>2100</td>
+<td class="status pago">pago</td>
+<td>2026-04-20</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Casal%20de%202100MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>25</td><td>2026-03-13</td>
+<td>Maior de Idade</td><td>1300</td>
+<td class="status pago">pago</td>
+<td>2026-04-13</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Maior%20de%20Idade%20de%201300MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>30</td><td>2026-04-10</td>
+<td>Maior de Idade</td><td>1300</td>
+<td class="status pago">pago</td>
+<td>2026-05-10</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Maior%20de%20Idade%20de%201300MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>0</td><td>2026-03-15</td>
+<td>Familiar</td><td>4100</td>
+<td class="status pago">pago</td>
+<td>2026-04-15</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Familiar%20de%204100MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>0</td><td>2026-03-15</td>
+<td>Familiar</td><td>4100</td>
+<td class="status pago">pago</td>
+<td>2026-04-15</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Familiar%20de%204100MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>0</td><td>2026-03-15</td>
+<td>Familiar</td><td>4100</td>
+<td class="status pago">pago</td>
+<td>2026-04-15</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Familiar%20de%204100MZN" target="_blank">Enviar</a></td>
+</tr><tr class="">
+<td>undefined</td><td>0</td><td>2026-03-15</td>
+<td>Familiar</td><td>4100</td>
+<td class="status pago">pago</td>
+<td>2026-04-15</td>
+<td><a class="whatsapp" href="https://wa.me/879171503?text=Aluno%20undefined%2C%20pagamento%20de%20Familiar%20de%204100MZN" target="_blank">Enviar</a></td>
+</tr></tbody>
+</table>
+
+<h2>Adicionar Novo Aluno</h2>
+<form id="formAluno">
+<input type="text" id="nome" placeholder="Nome" required="">
+<input type="number" id="idade" placeholder="Idade" required="">
+<input type="date" id="inscricao" required="">
+<select id="pacote" required="">
+<option value="mensalidade-menor">Menor de Idade (1000)</option>
+<option value="mensalidade-maior">Maior de Idade (1300)</option>
+<option value="inscricao">Inscrição (300)</option>
+<option value="pacote-casal">Casal (2100)</option>
+<option value="pacote-familiar">Familiar 4 Pessoas (4100)</option>
+</select>
+<select id="forma" required="">
+<option value="emola">Emola 879171503</option>
+<option value="mpesa">Mpesa 848527511</option>
+</select>
+<button type="submit">Adicionar</button>
+</form>
+
+<h2>Dashboard de Pagamentos</h2>
+<div class="dashboard">
+<div><h3>Menor de Idade</h3><p id="valorMenor">3000 MZN</p></div>
+<div><h3>Maior de Idade</h3><p id="valorMaior">6500 MZN</p></div>
+<div><h3>Casal</h3><p id="valorCasal">4200 MZN</p></div>
+<div><h3>Familiar</h3><p id="valorFamiliar">16400 MZN</p></div>
+</div>
+
+<canvas id="graficoPagamentos" height="800" style="display: block; box-sizing: border-box; height: 800px; width: 1200px;" width="1200"></canvas>
+
+</div>
+
+<script>
+// Lista inicial de alunos
+let alunos=[
+{name:"Yuran Sanga Macie",idade:21,inscricao:"2026-03-17",pacote:"Maior de Idade",pagamento:"pago",valor:1300,forma:"emola"},
+{name:"Laila Frans",idade:20,inscricao:"2026-02-14",pacote:"Menor de Idade",pagamento:"pago",valor:1000,forma:"mpesa"},
+{name:"Wilson Frans",idade:12,inscricao:"2026-03-20",pacote:"Menor de Idade",pagamento:"pago",valor:1000,forma:"emola"},
+{name:"Martinho Mulewa",idade:21,inscricao:"2026-03-20",pacote:"Maior de Idade",pagamento:"pago",valor:1300,forma:"mpesa"},
+{name:"Euridice Mulewa",idade:27,inscricao:"2026-01-20",pacote:"Maior de Idade",pagamento:"devedor",valor:1300,forma:"emola"},
+{name:"Joelma Macie",idade:16,inscricao:"2026-03-20",pacote:"Menor de Idade",pagamento:"pago",valor:1000,forma:"emola"},
+{name:"Denzel Macie",idade:26,inscricao:"2026-03-20",pacote:"Casal",pagamento:"pago",valor:2100,forma:"mpesa"},
+{name:"Ana Paula Macie",idade:0,inscricao:"2026-03-20",pacote:"Casal",pagamento:"pago",valor:2100,forma:"mpesa"},
+{name:"Quina Cornelio",idade:25,inscricao:"2026-03-13",pacote:"Maior de Idade",pagamento:"pago",valor:1300,forma:"emola"},
+{name:"Januario Cornelio",idade:30,inscricao:"2026-04-10",pacote:"Maior de Idade",pagamento:"pago",valor:1300,forma:"mpesa"},
+{name:"Shirly Marcela",idade:0,inscricao:"2026-03-15",pacote:"Familiar",pagamento:"pago",valor:4100,forma:"emola"},
+{name:"Fidaltos Marcela",idade:0,inscricao:"2026-03-15",pacote:"Familiar",pagamento:"pago",valor:4100,forma:"emola"},
+{name:"Chelsia Marcela",idade:0,inscricao:"2026-03-15",pacote:"Familiar",pagamento:"pago",valor:4100,forma:"emola"},
+{name:"Lurdes Marcela",idade:0,inscricao:"2026-03-15",pacote:"Familiar",pagamento:"pago",valor:4100,forma:"emola"},
+];
+
+// Função para calcular validade (1 mês)
+function validade(data){
+let d=new Date(data);
+d.setMonth(d.getMonth()+1);
+return d.toISOString().split('T')[0];
+}
+
+// Atualiza tabela
+function atualizarTabela(){
+const tbody=document.querySelector("#tabelaAlunos tbody");
+tbody.innerHTML="";
+alunos.forEach(a=>{
+let val=a.pagamento==="pago"?validade(a.inscricao):"-";
+let link=`https://wa.me/879171503?text=${encodeURIComponent(`Aluno ${a.nome}, pagamento de ${a.pacote} de ${a.valor}MZN`)}`;
+tbody.innerHTML+=`<tr class="${a.pagamento==='devedor'?'devedor':''}">
+<td>${a.nome}</td><td>${a.idade}</td><td>${a.inscricao}</td>
+<td>${a.pacote}</td><td>${a.valor}</td>
+<td class="status ${a.pagamento}">${a.pagamento}</td>
+<td>${val}</td>
+<td><a class="whatsapp" href="${link}" target="_blank">Enviar</a></td>
+</tr>`;
+});
+atualizarDashboard();
+atualizarGrafico();
+}
+
+// Adicionar novo aluno
+document.getElementById("formAluno").addEventListener("submit",function(e){
+e.preventDefault();
+let nome=document.getElementById("nome").value;
+let idade=parseInt(document.getElementById("idade").value);
+let inscricao=document.getElementById("inscricao").value;
+let pacoteSelect=document.getElementById("pacote");
+let pacote=pacoteSelect.options[pacoteSelect.selectedIndex].text;
+let forma=document.getElementById("forma").value;
+let valor=0;
+if(pacoteSelect.value==="mensalidade-menor")valor=1000;
+else if(pacoteSelect.value==="mensalidade-maior")valor=1300;
+else if(pacoteSelect.value==="inscricao")valor=300;
+else if(pacoteSelect.value==="pacote-casal")valor=2100;
+else if(pacoteSelect.value==="pacote-familiar")valor=4100;
+alunos.push({nome,idade,inscricao,pacote,pagamento:"pago",valor,forma});
+atualizarTabela();
+this.reset();
+});
+
+// Atualizar dashboard
+function atualizarDashboard(){
+let menor=0,maior=0,casal=0,familiar=0;
+alunos.forEach(a=>{
+if(a.pacote.includes("Menor"))menor+=a.valor;
+else if(a.pacote.includes("Maior"))maior+=a.valor;
+else if(a.pacote.includes("Casal"))casal+=a.valor;
+else if(a.pacote.includes("Familiar"))familiar+=a.valor;
+});
+document.getElementById("valorMenor").innerText=menor+" MZN";
+document.getElementById("valorMaior").innerText=maior+" MZN";
+document.getElementById("valorCasal").innerText=casal+" MZN";
+document.getElementById("valorFamiliar").innerText=familiar+" MZN";
+}
+
+// Gráfico
+let ctx=document.getElementById("graficoPagamentos").getContext("2d");
+let grafico=new Chart(ctx,{type:"bar",data:{labels:["Menor","Maior","Casal","Familiar"],datasets:[{label:"Pagamentos MZN",data:[],backgroundColor:"#38bdf8"}]},options:{responsive:true,scales:{y:{beginAtZero:true}}}});
+function atualizarGrafico(){
+grafico.data.datasets[0].data=[parseInt(document.getElementById("valorMenor").innerText),
+parseInt(document.getElementById("valorMaior").innerText),
+parseInt(document.getElementById("valorCasal").innerText),
+parseInt(document.getElementById("valorFamiliar").innerText)];
+grafico.update();
+}
+
+// Atualiza tabela inicial
+atualizarTabela();
+
+// Simula atualização de devedores automaticamente a cada 10s
+setInterval(()=>{
+let hoje=new Date();
+alunos.forEach(a=>{
+if(a.pagamento==="pago"){
+let v=new Date(validade(a.inscricao));
+if(hoje>v)a.pagamento="devedor";
+}
+});
+atualizarTabela();
+},10000);
+</script>
+
+
+</body></html>
